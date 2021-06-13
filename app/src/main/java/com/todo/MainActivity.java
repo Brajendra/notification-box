@@ -5,9 +5,13 @@ import android.app.NotificationManager;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,12 +19,14 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.messaging.FirebaseMessaging;
+import com.todo.notfication.NotificationActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
     TextView logToken;
     String token = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             // Create channel to show notifications.
-            String channelId  = getString(R.string.default_notification_channel_id);
+            String channelId = getString(R.string.default_notification_channel_id);
             String channelName = getString(R.string.default_notification_channel_name);
             NotificationManager notificationManager =
                     getSystemService(NotificationManager.class);
@@ -54,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         // [END handle_data_extras]
 
         Button logTokenButton = findViewById(R.id.logTokenButton);
-         logToken = findViewById(R.id.logToken);
+        logToken = findViewById(R.id.logToken);
         logTokenButton.setOnClickListener(v -> {
             // Get token
             // [START log_reg_token]
@@ -81,6 +87,30 @@ public class MainActivity extends AppCompatActivity {
             clipboard.setPrimaryClip(clip);
             Toast.makeText(MainActivity.this, "Token Copied!!", Toast.LENGTH_SHORT).show();
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.notification_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.notification:
+                openNotificationsActivity();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void openNotificationsActivity() {
+        Intent intent = new Intent(this, NotificationActivity.class);
+        startActivity(intent);
     }
 
     private void showToken(String message, String token) {
