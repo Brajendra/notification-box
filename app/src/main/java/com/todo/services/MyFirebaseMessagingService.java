@@ -37,18 +37,20 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     }
 
     private void sendNotification(Map<String, String> map) {
-        String key = "message";
-        String value = null;
-        if (map.containsKey("message")) {
-            value = map.get(key);
-        } else {
-            return;
+        String title = "";
+        String message = "";
+        if (map.containsKey("title")) {
+            title = map.get("title");
         }
+
+        if (map.containsKey("message")) {
+            message = map.get("message");
+        }
+
 
         NotificationDao notificationDao = ((App) getApplication()).getDatabase().notificationDao();
         Notification notification = new Notification();
-        notification.title = key;
-        notification.message = value;
+        notification.data = map;
         notification.createdAt = System.currentTimeMillis();
         notificationDao.insert(notification);
 
@@ -63,8 +65,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         NotificationCompat.Builder notificationBuilder =
                 new NotificationCompat.Builder(this, channelId)
                         .setSmallIcon(R.drawable.ic_stat_ic_notification)
-                        .setContentTitle(key)
-                        .setContentText(value)
+                        .setContentTitle(title)
+                        .setContentText(message)
                         .setAutoCancel(true)
                         .setSound(defaultSoundUri)
                         .setContentIntent(pendingIntent);
