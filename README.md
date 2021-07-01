@@ -1,90 +1,84 @@
 
-## notification-box ##
 
-available for android
+# Notification Box #
+
+`notification-box` available for android
 
 apk published exclusively on github
 
 
-## releases ##
+## Releases ##
 
-* stable
+* Stable
 
 [notification-box-0.0.2](https://github.com/TurquoiseSpace/notification-box/releases/download/0.0.2/notification-box-0.0.2.apk)
 
-* not working / failing / buggy
+* Not working / Failing / Buggy
 
 [notification-box-0.0.3](https://github.com/TurquoiseSpace/notification-box/releases/download/0.0.3/notification-box-0.0.3.apk)
 
 
-## repository ##
+## Repository ##
 
-* browse
+* Browse
 
 https://github.com/TurquoiseSpace/notification-box
 
-* download zip
+* Download ZIP
 
 https://github.com/TurquoiseSpace/notification-box/archive/refs/heads/master.zip
 
 
-## clone ##
+## Clone ##
 
-* https
+* HTTPS
 
 	```git clone https://github.com/TurquoiseSpace/notification-box.git```
 
-* ssh
+* SSH
 
 	```git clone git@github.com:TurquoiseSpace/notification-box.git```
 
-* github cli
+* GitHub CLI
 
 	```gh repo clone TurquoiseSpace/notification-box```
 
 
-## android app instructions ##
+## Instructions ##
 
-1)
-download the apk
+* Android App
+
+1) download the apk
 directly onto your mobile device
 or
 onto your laptop / desktop, then copy it onto your mobile device 
 
-2)
-in your android mobile device, go to settings and enable `allow installing apps from external sources`
+2) in your android mobile device, go to settings and enable `allow installing apps from external sources`
 
-3)
-install the apk, in your mobile device
+3) install the apk, in your mobile device
 
-4)
-open the app with name `Firebase Cloud Messaging`
+4) open the app with name `Firebase Cloud Messaging`
 
-5)
-click on the "LOG TOKEN" button
+5) click on the "LOG TOKEN" button
 it will generate the `FCM Registration Token`
 this is a client specific token, which would be used to send the push notifications to this particular android device client app
 which would look something like this
 
 	```dlSGYt8MQ5a-HG4ZZbmBPE:APA91bHh9aNqos0H0Fw3OmTlAtXoC4bryB-9Ws5m6_f7WzDARiM_1a6XkKwN3WMchGFrEN-olCw8Uo65k7bm-g4aXOdklM0Dglb-3-3nS0LahtTWG38vlgY4y5PaREz25Prhp0b5pJgo```
 
-6)
-click on the "COPY TOKEN" button
+6) click on the "COPY TOKEN" button
 
-7)
-open your email, via gmail or any other email service, in app or browser, in your mobile
+7) open your email, via gmail or any other email service, in app or browser, in your mobile
 send yourself this token, on email
 so you can access this token, on your laptop or desktop
 
 
-## sending push notification instructions ##
+* Sending Push Notification (via Postman)
 
-1)
-on your desktop or laptop, open your email, in which you had shared your `FCM Registration Token`
+1) on your desktop or laptop, open your email, in which you had shared your `FCM Registration Token`
 copy this token
 
-2)
-open Postman, and paste this FCM registration token in the `raw` `JSON` Request Body, as the value of `to` attribute
+2) open Postman, and paste this FCM registration token in the `raw` `JSON` Request Body, as the value of `to` attribute
 the request body would look something like this
 
 	```
@@ -99,18 +93,15 @@ the request body would look something like this
 	}
 	```
 
-3)
-in the request url, copy paste the below
+3) in the request url, copy paste the below
 
 	```https://fcm.googleapis.com/fcm/send```
 
-4)
-set the HTTP Method as
+4) set the HTTP Method as
 
 	```POST```
 
-5)
-in the Request Headers, copy paste the following header
+5) in the Request Headers, copy paste the following header
 
 	```Authorization:key=AAAAucpu21Y:APA91bEYxJ6XGquZzAxqJnyUYeSwi7ocOWO4iJwi676vXnRXrDn-TazsJmESzQHHv5Dx2OO3HFOk5moxzpvEPCMCv3UA5ZopDnVFBK6lOeE1qWQugDVabmN229DAXd3G7tdul7mmlYpF```
 
@@ -118,11 +109,9 @@ where the header name is `Authorization` and the header value is `key=AAAAucpu21
 
 the value of this header contains the `Access Key` of this project which is registered with the `Google Cloud Platform`
 
-6)
-click on `Send` button
+6) click on `Send` button
 
-7)
-Voila !
+7) Voila !
 You should have received the Push Notification in your Android Client
 
 
