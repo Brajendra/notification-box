@@ -57,7 +57,7 @@ onto your laptop / desktop, then copy it onto your mobile device
 
 3) install the apk, in your mobile device
 
-4) open the app with name `Firebase Cloud Messaging`
+4) open the app with name `Firebase Cloud Messaging` , having a green Android bot icon
 
 5) click on the "LOG TOKEN" button
 it will generate the `FCM Registration Token`
@@ -107,7 +107,7 @@ the request body would look something like this
 
 where the header name is `Authorization` and the header value is `key=AAAAucpu21Y:APA91bEYxJ6XGquZzAxqJnyUYeSwi7ocOWO4iJwi676vXnRXrDn-TazsJmESzQHHv5Dx2OO3HFOk5moxzpvEPCMCv3UA5ZopDnVFBK6lOeE1qWQugDVabmN229DAXd3G7tdul7mmlYpF`
 
-the value of this header contains the `Access Key` of this project which is registered with the `Google Cloud Platform`
+the value of this header contains the `API Access Key` of this project which is registered with the `Google Cloud Platform`
 
 6) click on `Send` button
 
