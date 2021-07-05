@@ -60,9 +60,9 @@ onto your laptop / desktop, then copy it onto your mobile device
 
 4) open the app with name `Firebase Cloud Messaging` , having a green Android bot icon
 
-<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-42-73.jpg" alt="Notification Box - Android - App Icon" width="50%" height="50%">
+<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-42-73.jpg" alt="Notification Box - Android - App Icon" width="30%" height="30%">
 
-<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-46-61.jpg" alt="Notification Box - Android - App Home / Main Screen" width="50%" height="50%">
+<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-46-61.jpg" alt="Notification Box - Android - App Home / Main Screen" width="30%" height="30%">
 
 5) click on the "LOG TOKEN" button,
 it will generate the `FCM Registration Token`,
@@ -73,17 +73,17 @@ which would look something like this
 
 which would be different for you
 
-<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-49-32.jpg" alt="Notification Box - Android - Log / Generate Token" width="50%" height="50%">
+<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-49-32.jpg" alt="Notification Box - Android - Log / Generate Token" width="30%" height="30%">
 
 6) click on the "COPY TOKEN" button
 
-<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-51-68.jpg" alt="Notification Box - Android - Copy Token" width="50%" height="50%">
+<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-51-68.jpg" alt="Notification Box - Android - Copy Token" width="30%" height="30%">
 
 7) open your email, via gmail or any other email service, in app or browser, in your mobile,
 send yourself this token, on email,
 so you can access this token, on your laptop or desktop
 
-<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-25-45-83.jpg" alt="Gmail - Android - Compose / Send Email" width="50%" height="50%">
+<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-25-45-83.jpg" alt="Gmail - Android - Compose / Send Email" width="30%" height="30%">
 
 
 #### Sending Push Notification - Postman ####
@@ -152,15 +152,15 @@ You should have received the Push Notification in your Android Client
 
 1) actual push notification
 
-<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-17-33-20-73.jpg" alt="Notification Box - Android - Push Notification" width="50%" height="50%">
+<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-17-33-20-73.jpg" alt="Notification Box - Android - Push Notification" width="30%" height="30%">
 
 2) view the current and all the pervious push notifications, which are persisted, from the android client database
 
-<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-17-33-28-31.jpg" alt="Notification Box - Android - Current and Previous Notifications" width="50%" height="50%">
+<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-17-33-28-31.jpg" alt="Notification Box - Android - Current and Previous Notifications" width="30%" height="30%">
 
 when no push notifications are persent in the app database client
 
-<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-56-64.jpg" alt="Notification Box - Android - No Previous Notifications" width="50%" height="50%">
+<img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-56-64.jpg" alt="Notification Box - Android - No Previous Notifications" width="30%" height="30%">
 
 
 ## Reference Links ##
