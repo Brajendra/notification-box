@@ -11,10 +11,6 @@ apk published exclusively on github
 
 * Stable
 
-[notification-box-0.0.2](https://github.com/TurquoiseSpace/notification-box/releases/download/0.0.2/notification-box-0.0.2.apk)
-
-* Not working / Failing / Buggy
-
 [notification-box-0.0.3](https://github.com/TurquoiseSpace/notification-box/releases/download/0.0.3/notification-box-0.0.3.apk)
 
 
@@ -44,7 +40,7 @@ https://github.com/TurquoiseSpace/notification-box/archive/refs/heads/master.zip
 	```gh repo clone TurquoiseSpace/notification-box```
 
 
-## Instructions ##
+## Usage Instructions ##
 
 * Android App
 
