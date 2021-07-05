@@ -58,9 +58,9 @@ onto your laptop / desktop, then copy it onto your mobile device
 
 3) install the apk, in your mobile device
 
-4) open the app with name `Firebase Cloud Messaging` , having a green Android bot icon
-
 <img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-42-73.jpg" alt="Notification Box - Android - App Icon" width="30%" height="30%">
+
+4) open the app with name `Firebase Cloud Messaging` , having a green Android bot icon
 
 <img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-46-61.jpg" alt="Notification Box - Android - App Home / Main Screen" width="30%" height="30%">
 
@@ -154,7 +154,10 @@ You should have received the Push Notification in your Android Client
 
 <img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-17-33-20-73.jpg" alt="Notification Box - Android - Push Notification" width="30%" height="30%">
 
-2) view the current and all the pervious push notifications, which are persisted, from the android client database
+2) view the current and all the pervious push notifications, which are persisted, from the android client database,
+by clicking on a push notification which has arrived,
+or,
+by clicking on the bell icon on the home / main screen of the `notification-box` app
 
 <img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-17-33-28-31.jpg" alt="Notification Box - Android - Current and Previous Notifications" width="30%" height="30%">
 
