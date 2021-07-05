@@ -60,18 +60,18 @@ onto your laptop / desktop, then copy it onto your mobile device
 
 <img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-42-73.jpg" alt="Notification Box - Android - App Icon" width="30%" height="30%">
 
-4) open the app with name `Firebase Cloud Messaging` , having a green Android bot icon
+4) open the app with name `Firebase Cloud Messaging`, having a green Android bot icon
 
 <img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-46-61.jpg" alt="Notification Box - Android - App Home / Main Screen" width="30%" height="30%">
 
 5) click on the "LOG TOKEN" button,
 it will generate the `FCM Registration Token`,
 this is a client specific token, which would be used to send the push notifications to this particular android device client app,
-which would look something like this
+and is supposed to look something like this
 
 	```cuo0-PvyQkO-lL5XsqHDAk:APA91bEmCznZGGnD-huqBrbNBhzyzUgkvMyFQoVJSDf4zYbuUGrghUT0DMSz3eVV2I7tINGJWw88qqS3Mx0rGVzVnRQpqqKbDqKvmEnN9z3aSRPUK4f1JTNoZ7JZ2rA_AFTCSjUhmRhn```
 
-which would be different for you
+indeed it will, be different / unique for you
 
 <img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-49-32.jpg" alt="Notification Box - Android - Log / Generate Token" width="30%" height="30%">
 
@@ -79,9 +79,9 @@ which would be different for you
 
 <img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-51-68.jpg" alt="Notification Box - Android - Copy Token" width="30%" height="30%">
 
-7) open your email, via gmail or any other email service, in app or browser, in your mobile,
-send yourself this token, on email,
-so you can access this token, on your laptop or desktop
+7) from your mobile, open an email client whichever you use, like gmail or any other email service, in app or browser,
+and send yourself this token, on email,
+so you can access / use it later, from your laptop or desktop
 
 <img src="https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-25-45-83.jpg" alt="Gmail - Android - Compose / Send Email" width="30%" height="30%">
 
