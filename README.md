@@ -2,9 +2,12 @@
 
 # Notification Box #
 
-`notification-box` available for android
+`notification-box` is available for android, and published exclusively on github
 
-apk published exclusively on github
+send custom push notifications to yourself
+
+can be used to send and receive `push notfications` of events / appointments / reminders / alerts,
+or for any other purpose you can think of
 
 
 ## Releases ##
