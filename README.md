@@ -116,6 +116,41 @@ You should have received the Push Notification in your Android Client
 https://console.cloud.google.com/
 
 
+## Git Commands ##
+
+* List All Tags (Local)
+
+	```git show-ref --tags```
+
+* List All Tags (Remote)
+
+	```git ls-remote --tags origin```
+
+* Delete Tag (Local)
+
+	```git tag -d <actual_tag>```
+
+	```git tag -d 0.0.9```
+
+* Delete Tag (Remote)
+
+	```git push origin :<actual_tag>```
+
+	```git push origin :0.0.9```
+
+* Create Tag (Local)
+
+	```git tag <actual_tag>```
+
+	```git tag 0.0.9```
+
+* Create Tag (Remote)
+
+	```git push origin <actual_tag>```
+
+	```git push origin 0.0.9```
+
+
 ## Contact Info ##
 
 notification-box@googlegroups.com
