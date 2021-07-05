@@ -13,6 +13,10 @@ apk published exclusively on github
 
 [notification-box-0.0.3](https://github.com/TurquoiseSpace/notification-box/releases/download/0.0.3/notification-box-0.0.3.apk)
 
+* Tag / Tree
+
+[0.0.3](https://github.com/TurquoiseSpace/notification-box/tree/3ee8745ecdce381bc0b3ec68f57d79e4927ada21)
+
 
 ## Repository ##
 
@@ -42,7 +46,8 @@ https://github.com/TurquoiseSpace/notification-box/archive/refs/heads/master.zip
 
 ## Usage Instructions ##
 
-* Android App
+
+#### Notification Box - Android App - Initial / One Time Setup ####
 
 1) download the apk
 directly onto your mobile device
@@ -55,39 +60,63 @@ onto your laptop / desktop, then copy it onto your mobile device
 
 4) open the app with name `Firebase Cloud Messaging` , having a green Android bot icon
 
+![Notification Box - Android - App Icon](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-42-73.jpg)
+
+![Notification Box - Android - App Home / Main Screen](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-46-61.jpg)
+
 5) click on the "LOG TOKEN" button
 it will generate the `FCM Registration Token`
 this is a client specific token, which would be used to send the push notifications to this particular android device client app
 which would look something like this
 
-	```dlSGYt8MQ5a-HG4ZZbmBPE:APA91bHh9aNqos0H0Fw3OmTlAtXoC4bryB-9Ws5m6_f7WzDARiM_1a6XkKwN3WMchGFrEN-olCw8Uo65k7bm-g4aXOdklM0Dglb-3-3nS0LahtTWG38vlgY4y5PaREz25Prhp0b5pJgo```
+	```cuo0-PvyQkO-lL5XsqHDAk:APA91bEmCznZGGnD-huqBrbNBhzyzUgkvMyFQoVJSDf4zYbuUGrghUT0DMSz3eVV2I7tINGJWw88qqS3Mx0rGVzVnRQpqqKbDqKvmEnN9z3aSRPUK4f1JTNoZ7JZ2rA_AFTCSjUhmRhn```
+
+which would be different for you
+
+![Notification Box - Android - Log / Generate Token](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-49-32.jpg)
 
 6) click on the "COPY TOKEN" button
+
+![Notification Box - Android - Copy Token](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-51-68.jpg)
 
 7) open your email, via gmail or any other email service, in app or browser, in your mobile
 send yourself this token, on email
 so you can access this token, on your laptop or desktop
 
+![Gmail - Android - Compose / Send Email](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-25-45-83.jpg)
 
-* Sending Push Notification (via Postman)
+
+#### Sending Push Notification - Postman ####
 
 1) on your desktop or laptop, open your email, in which you had shared your `FCM Registration Token`
-copy this token
+and copy that token
+
+![Gmail - Web Browser](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot%20from%202021-07-05%2016-06-19.png)
 
 2) open Postman, and paste this FCM registration token in the `raw` `JSON` Request Body, as the value of `to` attribute
 the request body would look something like this
 
 	```
 	{
-	   "to":"dlSGYt8MQ5a-HG4ZZbmBPE:APA91bHh9aNqos0H0Fw3OmTlAtXoC4bryB-9Ws5m6_f7WzDARiM_1a6XkKwN3WMchGFrEN-olCw8Uo65k7bm-g4aXOdklM0Dglb-3-3nS0LahtTWG38vlgY4y5PaREz25Prhp0b5pJgo",
-	   "data":{
-	      "title":"testing",
-	      "message":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-	      "json_key":"json_value",
-	      "json_key_2":"json_value_2"
-	   }
+		"to" : "cuo0-PvyQkO-lL5XsqHDAk:APA91bEmCznZGGnD-huqBrbNBhzyzUgkvMyFQoVJSDf4zYbuUGrghUT0DMSz3eVV2I7tINGJWw88qqS3Mx0rGVzVnRQpqqKbDqKvmEnN9z3aSRPUK4f1JTNoZ7JZ2rA_AFTCSjUhmRhn",
+		"data" : {
+			"title" : "testing",
+			"message" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+			"json_key" : "json_value",
+			"array" : [
+				"hola",
+				"amigos",
+				"and",
+				"senoritas"
+			],
+			"object" : {
+				"inner_json_key" : "inner_json_value"
+			}
+		}
 	}
 	```
+
+![Postman - Client - Request Body](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot%20from%202021-07-05%2017-16-53.png)
 
 3) in the request url, copy paste the below
 
@@ -101,19 +130,44 @@ the request body would look something like this
 
 	```Authorization:key=AAAAucpu21Y:APA91bEYxJ6XGquZzAxqJnyUYeSwi7ocOWO4iJwi676vXnRXrDn-TazsJmESzQHHv5Dx2OO3HFOk5moxzpvEPCMCv3UA5ZopDnVFBK6lOeE1qWQugDVabmN229DAXd3G7tdul7mmlYpF```
 
+![Postman - Client - Request Header - Key Value Pair](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot%20from%202021-07-05%2017-21-28.png)
+
 where the header name is `Authorization` and the header value is `key=AAAAucpu21Y:APA91bEYxJ6XGquZzAxqJnyUYeSwi7ocOWO4iJwi676vXnRXrDn-TazsJmESzQHHv5Dx2OO3HFOk5moxzpvEPCMCv3UA5ZopDnVFBK6lOeE1qWQugDVabmN229DAXd3G7tdul7mmlYpF`
 
 the value of this header contains the `API Access Key` of this project which is registered with the `Google Cloud Platform`
 
+![Postman - Client - Request Header - Bulk Edit](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot%20from%202021-07-05%2017-21-52.png)
+
 6) click on `Send` button
+check the response status, must be `200 OK`
+also check the response body for `success` count as `1`
+
+![Postman - Client - Response Status and Body](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot%20from%202021-07-05%2017-23-57.png)
 
 7) Voila !
 You should have received the Push Notification in your Android Client
 
 
-## Reference Link ##
+#### Receiving Push Notification - Notification Box - Android App ####
+
+1) actual push notification
+
+![Notification Box - Android - Push Notification](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-17-33-20-73.jpg)
+
+2) view the current and all the pervious push notifications, which are persisted, from the android client database
+
+![Notification Box - Android - Current and Previous Notifications](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-17-33-28-31.jpg)
+
+when no push notifications are persent in the app database client
+
+![Notification Box - Android - No Previous Notifications](https://github.com/TurquoiseSpace/notification-box/blob/master/assets/apk-0.0.3/Screenshot_2021-07-05-14-24-56-64.jpg)
+
+
+## Reference Links ##
 
 https://console.cloud.google.com/
+
+https://guides.github.com/features/mastering-markdown/
 
 
 ## Git Commands ##
