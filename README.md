@@ -2,6 +2,11 @@
 
 # Notification Box #
 
+![Visit Count](https://profile-counter.glitch.me/TurquoiseSpace_notification-box/count.svg)
+
+
+## Description ##
+
 `notification-box` is available for android, and published exclusively on github
 
 send custom push notifications to yourself
